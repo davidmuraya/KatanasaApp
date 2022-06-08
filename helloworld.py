@@ -24,4 +24,4 @@ async def status_resource(response: Response):
     status_model.detail = "Hello World"
     status_model.success = True
 
-    return _statusModel
+    return status_model
