@@ -1,0 +1,84 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Sign IN {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 offset-lg-1">
+        <div class="yoo-vertical-middle">
+          <div class="yoo-vertical-middle-in">
+            <div class="yoo-signup-img yoo-style1">
+              <img src="/app/static/assets/img/signup/01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!-- .col -->
+      <div class="col-lg-4">
+        <div class="yoo-vertical-middle">
+          <div class="yoo-vertical-middle-in">
+            <form action="#" class="yoo-form yoo-style1">
+              <h2 class="yoo-form-title">
+                <a target="_blank" rel="noopener noreferrer" 
+                   href="https://www.salmonbusinesssolutions.com">SBS Bima-MO</a> - Sign IN
+              </h2>
+              <div class="yoo-form-subtitle">Don’t have an account? 
+                <a href="/sign-up.html" class="yoo-form-btn yoo-style2">Sign up</a> - <a href="/">Home</a>
+              </div>
+              <div class="yoo-height-b25 yoo-height-lg-b25"></div>
+
+              <div class="yoo-height-b15 yoo-height-lg-b15"></div>
+              <div class="yoo-height-b15 yoo-height-lg-b15"></div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="yoo-form-field">
+                    <input type="text" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="yoo-form-field">
+                    <input type="text" placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                  <div class="yoo-form-field yoo-forget-pass-wrap">
+                    <div class="yoo-checkbox-wrap yoo-style1">
+                      <span class="yoo-checkbox yoo-style3 yoo-color2">
+                        <input type="checkbox">
+                        <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                      </span>
+                      <div class="yoo-checkbox-text">Remember me</div>
+                    </div>
+                    <div class="yoo-forget-pass-btn">
+                      <a href="#" class="yoo-form-btn yoo-style2 yoo-type1 yoo-color1">Forgot password?</a>
+                    </div>
+                  </div>
+                  <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                  <a href="#" class="yoo-form-btn yoo-style1 yoo-color1"><span>Sign In</span></a>
+
+                  <br />
+                  <div>
+                    &copy; <a target="_blank" rel="noopener noreferrer" 
+                              href="https://www.salmonbusinesssolutions.com/">SBS</a>
+                    - coded by <a target="_blank" rel="noopener noreferrer" href="https://www.bima-mo.com">Bima-MO</a>.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

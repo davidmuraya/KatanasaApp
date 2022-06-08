@@ -1,0 +1,897 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+    
+  <div class="yoo-content yoo-style1">
+
+    <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="yoo-sectin-heading yoo-style1">
+            <div class="yoo-sectin-heading-left">
+              <h2 class="yoo-section-title">
+                <a target="_blank" rel="noopener noreferrer" 
+                   href="https://github.com/app-generator/theme-jinja2-admint">Jinja2 Theme AdminT</a>
+              </h2>
+              <div class="yoo-section-sub-title">
+                Design &copy; <a target="_blank" rel="noopener noreferrer" href="https://yookits.com/">YooKits</a> 
+                - coded by <a target="_blank" rel="noopener noreferrer" href="https://appseed.us/">AppSeed</a>.
+              </div>
+            </div>
+            <div class="yoo-sectin-heading-right">
+              <div class="yoo-button-group yoo-style1">
+                <a href="#" class="yoo-btn yoo-style1"><i class="material-icons-outlined">calendar_today</i>Today</a>
+                <a href="#" class="yoo-btn yoo-style3 yoo-color1">Custom Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+          <hr />
+        </div>
+      </div>
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="yoo-card yoo-style1 text-center">
+            <div class="yoo-card-body">
+              <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+              <div class="yoo-iconbox yoo-style1">
+                <div class="yoo-icon yoo-icon-color1 yoo-radious50 yoo-flex">
+                  <i class="material-icons-outlined">supervisor_account</i>
+                </div>
+                <div class="yoo-iconbox-text">
+                  <h3 class="yoo-iconbox-heading">10k</h3>
+                  <div class="yoo-iconbox-sub-heading">Users</div>
+                  <div class="yoo-height-b25 yoo-height-lg-b25"></div>
+                  <hr>
+                  <div class="yoo-progress-lavel yoo-style1 yoo-success-color">
+                    <i class="material-icons-outlined">arrow_drop_up</i>5.5%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .col -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="yoo-card yoo-style1 text-center">
+            <div class="yoo-card-body">
+              <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+              <div class="yoo-iconbox yoo-style1">
+                <div class="yoo-icon yoo-icon-color2 yoo-radious50 yoo-flex">
+                  <i class="material-icons-outlined">store</i>
+                </div>
+                <div class="yoo-iconbox-text">
+                  <h3 class="yoo-iconbox-heading">6.2k</h3>
+                  <div class="yoo-iconbox-sub-heading">Revenue</div>
+                  <div class="yoo-height-b25 yoo-height-lg-b25"></div>
+                  <hr>
+                  <div class="yoo-progress-lavel yoo-style1 yoo-style1 yoo-success-color">
+                    <i class="material-icons-outlined">arrow_drop_up</i>5.5%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .col -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="yoo-card yoo-style1 text-center">
+            <div class="yoo-card-body">
+              <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+              <div class="yoo-iconbox yoo-style1">
+                <div class="yoo-icon yoo-icon-color3 yoo-radious50 yoo-flex">
+                  <i class="material-icons-outlined">flag</i>
+                </div>
+                <div class="yoo-iconbox-text">
+                  <h3 class="yoo-iconbox-heading">0.4</h3>
+                  <div class="yoo-iconbox-sub-heading">Conversion Rate</div>
+                  <div class="yoo-height-b25 yoo-height-lg-b25"></div>
+                  <hr>
+                  <div class="yoo-progress-lavel yoo-style1 yoo-danger-color">
+                    <i class="material-icons-outlined">arrow_drop_down</i>5.5%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .col -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="yoo-card yoo-style1 text-center">
+            <div class="yoo-card-body">
+              <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+              <div class="yoo-iconbox yoo-style1">
+                <div class="yoo-icon yoo-icon-color4 yoo-radious50 yoo-flex">
+                  <i class="material-icons-outlined">cloud</i>
+                </div>
+                <div class="yoo-iconbox-text">
+                  <h3 class="yoo-iconbox-heading">16k</h3>
+                  <div class="yoo-iconbox-sub-heading">Sessions</div>
+                  <div class="yoo-height-b25 yoo-height-lg-b25"></div>
+                  <hr>
+                  <div class="yoo-progress-lavel yoo-style1 yoo-success-color">
+                    <i class="material-icons-outlined">arrow_drop_up</i>5.5%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .col -->
+      </div>
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Sales Graph</h2>
+              </div>
+              <div class="yoo-card-heading-right">
+                <div class="yoo-card-heading-right">
+                  <div class="yoo-custom-select-wrap yoo-style1">
+                    <select name="#" class="yoo-custom-select">
+                      <option value="classic-fit1">Weekly</option>
+                      <option value="classic-fit2">Monthly</option>
+                      <option value="classic-fit3">Yearly</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-height-b15 yoo-height-lg-b15"></div>
+              <div class="yoo-padd-lr-30">
+                <div class="yoo-chart-heading yoo-style4">
+                  <div class="yoo-chart-heading-left">
+                    <div class="yoo-chart-heading-in">
+                      <div class="yoo-chart-heading-title">
+                        <span>One time sale</span>
+                        <span>Subscription</span>
+                      </div>
+                      <div class="yoo-chart-heading-number">
+                        <span>$362,958.83</span>
+                        <span>$23,958.74</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yoo-chart-heading-right">
+                    <a href="#" class="yoo-btn yoo-style3 yoo-color1">Reconcile All Items</a>
+                  </div>
+                </div>
+              </div>
+              <div class="yoo-chart-wrap yoo-style11">
+                <div class="yoo-chart-in">
+                  <canvas id="yoo-chart5-type4" height="96"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .col -->
+        <div class="col-lg-4">
+          <div class="yoo-card yoo-style1 yoo-height-100p">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Sessions by Device</h2>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-chart-wrap yoo-style3">
+                <div class="yoo-chart-inside">
+                  <div class="yoo-chart-in">
+                    <canvas id="yoo-chart3" height="220" width="220"></canvas>
+                  </div>
+                  <div class="yoo-active-device">
+                    <div class="yoo-active-device-per">60 <span>%</span></div>
+                    <div class="yoo-active-device-title">Desktop Views</div>
+                  </div>
+                </div>
+                <div class="yoo-height-b15 yoo-height-lg-b15"></div>
+                <ul class="yoo-circle-stroke yoo-style1">
+                  <li>
+                    <span class="yoo-circle-color" data-bulet-color="#ffcc00"></span>
+                    <span class="yoo-circle-label">Desktop</span>
+                  </li>
+                  <li>
+                    <span class="yoo-circle-color" data-bulet-color="#ff9500"></span>
+                    <span class="yoo-circle-label">Mobile</span>
+                  </li>
+                  <li>
+                    <span class="yoo-circle-color" data-bulet-color="#ff3b30"></span>
+                    <span class="yoo-circle-label">Tablet</span>
+                  </li>
+                  <li>
+                    <span class="yoo-circle-color" data-bulet-color="#5856d6"></span>
+                    <span class="yoo-circle-label">Miscellaneous</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .col -->
+        <div class="col-lg-12">
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">All-time Entries</h2>
+              </div>
+              <div class="yoo-card-heading-right">
+                <a href="#" class="yoo-btn yoo-style1 yoo-small">View All</a>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="table-responsive">
+                <div class="yoo-table yoo-style1 yoo-type1">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Basic Info</th>
+                        <th>Company</th>
+                        <th>Invoice #</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Total Ammount</th>
+                        <th>Sent</th>
+                        <th>Status</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon1.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color1">OVERDIEW</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon2.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color2">paid</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon3.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color1">OVERDIEW</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon4.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color2">Paid</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon5.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color1">OVERDIEW</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon1.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color1">OVERDIEW</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="yoo-table-icon-box">
+                            <span class="yoo-checkbox yoo-style1 yoo-color2">
+                              <input type="checkbox"/>
+                              <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                            </span>
+                            <img src="/app/static/assets/img/icon/icon2.png" alt="icon" class="yoo-table-icon"/>
+                            <div class="yoo-table-icon-box-info">
+                              <h3 class="yoo-table-icon-title">Bob Dylan</h3>
+                              <span class="yoo-table-icon-text">Dylan@gmail.com</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Firebox</td>
+                        <td>121356</td>
+                        <td>27 Dec, 2020</td>
+                        <td>Service</td>
+                        <td>$65.23</td>
+                        <td>1</td>
+                        <td>
+                          <div class="yoo-tag-wrap yoo-style1">
+                            <a href="#" class="yoo-tag yoo-icon-color2">paid</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="yoo-table-more-option text-center"><i class="material-icons-outlined">more_horiz</i></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- .yoo-table -->
+              </div>
+              <div class="yoo-table-footer">
+                <div class="yoo-table-footer-left">
+                  <div class="yoo-table-footer-left-text">This report was generated on 23 Jan,2020 at 9:34:19 PM - <a href="#">Refresh Report</a></div>
+                </div>
+                <div class="yoo-table-footer-right">
+                  <ul class="yoo-mp0 yoo-table-footer-list">
+                    <li>
+                      <span class="yoo-efl-title">Show Rows:</span>
+                      <div class="yoo-custom-select-wrap yoo-style1">
+                        <select name="#" class="yoo-custom-select">
+                          <option value="classic-fit1">10</option>
+                          <option value="classic-fit2">15</option>
+                          <option value="classic-fit3">20</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li><span class="yoo-efl-title">Go to</span><input type="text" value="1"></li>
+                    <li>1 - 10 of 10</li>
+                    <li>
+                      <div class="yoo-navigation yoo-style1">
+                        <a href="#" class="yoo-prev"><i class="material-icons-outlined">keyboard_arrow_left</i></a>
+                        <a href="#" class="yoo-next"><i class="material-icons-outlined">keyboard_arrow_right</i></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .col -->
+        <div class="col-lg-6">
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Active Tasks (4/7)</h2>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-padd-lr-15">
+                <div class="yoo-padd-lr-15 yoo-card-content-height1" data-scrollbar>
+                  <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                  <ul class="yoo-task-list yoo-style1 yoo-mp0">
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color1 yoo-box-50 yoo-radious50">
+                        <img src="/app/static/assets/img/contact/01.jpg" alt="01" />
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3><a href="#">New Employee intro</a></h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color2 yoo-box-50">NW</div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1"><a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a></div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3><a href="#">Send email to CEO</a></h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color1 yoo-box-50 yoo-radious50">
+                        <img src="/app/static/assets/img/contact/05.jpg" alt="05" />
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1"><a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a></div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3><a href="#">New Joing Employee Welcome kit</a></h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color4 yoo-box-50">NW</div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1"><a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a></div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">Birthday Wish</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color1 yoo-box-50 yoo-radious50">
+                        <img src="/app/static/assets/img/contact/04.jpg" alt="04" />
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">New Joing Employee Welcome kit</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color1 yoo-box-50 yoo-radious50">
+                        <img src="/app/static/assets/img/contact/01.jpg" alt="01" />
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">Business Documentation Presentation</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color2 yoo-box-50">
+                        NW
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">Need a Web Develover for my Web Site</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color1 yoo-box-50 yoo-radious50">
+                        <img src="/app/static/assets/img/contact/05.jpg" alt="05" />
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">Business Documentation Presentation</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color4 yoo-box-50">
+                        NW
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">Need a Web Develover for my Web Site</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-task-checkmark">
+                        <span class="yoo-checkbox yoo-style1 yoo-color2">
+                          <input type="checkbox"/>
+                          <span class="yoo-checkbox-icon"><i class="material-icons">done</i></span>
+                        </span>
+                      </div>
+                      <div class="yoo-task-icon yoo-flex yoo-icon-color1 yoo-box-50 yoo-radious50">
+                        <img src="/app/static/assets/img/contact/04.jpg" alt="04" />
+                      </div>
+                      <div class="yoo-task-text">
+                        <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                        <div class="yoo-tag-wrap yoo-style1">
+                          <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        </div>
+                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
+                        <h3>
+                          <a href="#">Business Documentation Presentation</a>
+                        </h3>
+                        <div class="yoo-ativity-time"><i class="far fa-clock"></i> Scheduled For 3.00 PM on Jan 2019</div>
+                      </div>
+                      <div class="yoo-button-group yoo-style2">
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">edit</i></a>
+                        <a href="#" class="yoo-btn yoo-style4"><i class="material-icons-outlined">delete</i></a>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                </div>
+              </div>
+              <hr />
+              <a href="#" class="yoo-btn yoo-style2"> <i class="yoo-plus">+</i> Add New Task</a>
+            </div>
+          </div>
+        </div><!-- .col -->
+        <div class="col-lg-6">
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">My Contacts</h2>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-padd-lr-15">
+                <div class="yoo-padd-lr-15 yoo-card-content-height1" data-scrollbar>
+                  <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                  <ul class="yoo-contact-list yoo-style1 yoo-mp0">
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color1 yoo-box-50">
+                        <img src="/app/static/assets/img/contact/03.jpg" alt="03" />
+                      </div>
+                      <div class="yoo-contact-text">
+                        <h3>Deborah Clarke</h3>
+                        <span>dc@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                        <span class="yoo-tag yoo-icon-color5"><i class="material-icons-outlined">more_horiz</i></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color2 yoo-box-50">JB</div>
+                      <div class="yoo-contact-text">
+                        <h3>Jay Bryant</h3>
+                        <span>jb@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color1 yoo-box-50">
+                        <img src="/app/static/assets/img/contact/02.jpg" alt="02" />
+                      </div>
+                      <div class="yoo-contact-text">
+                        <h3>Rita Parks</h3>
+                        <span>rp@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color1 yoo-box-50">EB</div>
+                      <div class="yoo-contact-text">
+                        <h3>Eula Bailey</h3>
+                        <span>eb@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color3 yoo-box-50">
+                        DJ
+                      </div>
+                      <div class="yoo-contact-text">
+                        <h3>Darin Osborne</h3>
+                        <span>do@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color4 yoo-box-50">
+                        <img src="/app/static/assets/img/msg/msg2.png" alt="msg2" />
+                      </div>
+                      <div class="yoo-contact-text">
+                        <h3>Omio Brain</h3>
+                        <span>do@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color2 yoo-box-50">JB</div>
+                      <div class="yoo-contact-text">
+                        <h3>Jay Bryant</h3>
+                        <span>jb@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color1 yoo-box-50">
+                        <img src="/app/static/assets/img/contact/02.jpg" alt="02" />
+                      </div>
+                      <div class="yoo-contact-text">
+                        <h3>Rita Parks</h3>
+                        <span>rp@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="yoo-contact-icon yoo-flex yoo-icon-color1 yoo-box-50">EB</div>
+                      <div class="yoo-contact-text">
+                        <h3>Eula Bailey</h3>
+                        <span>eb@gmail.com</span>
+                      </div>
+                      <div class="yoo-tag-wrap yoo-style1">
+                        <a href="#" class="yoo-tag yoo-icon-color5">SIGN UP</a>
+                        <a href="#" class="yoo-tag yoo-icon-color5">TAGS</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                </div>
+              </div>
+              <hr />
+              <a href="#" class="yoo-btn yoo-style2">REAL-TIME REPORT <i class="material-icons-outlined">navigate_next</i>
+              </a>
+            </div>
+          </div>
+        </div><!-- .col -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+    
+    <div class="yoo-height-b60 yoo-height-lg-b60"></div>
+
+    {% include 'includes/footer.html' %}
+
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
