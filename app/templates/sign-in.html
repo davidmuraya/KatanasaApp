@@ -62,15 +62,15 @@
                   <div class="yoo-height-b20 yoo-height-lg-b20"></div>
                   <button type="submit" class="yoo-form-btn yoo-style1 yoo-color1">Sign In</button>
                   <br />
-                  {% if success%}
-                    <div class="yoo-alert yoo-success">
-                      {{message}}
-                    </div>
-                  {% else %}
-                    <div class="yoo-alert yoo-danger">
-                      {{message}}
-                    </div>
-                  {%endif%}
+                      {% if success%}
+                        <div class="yoo-alert yoo-success">
+                          {{message}}
+                        </div>
+                      {% elif success == False %}
+                        <div class="yoo-alert yoo-danger">
+                          {{message}}
+                        </div>
+                      {%endif%}
                   <div>
                     &copy; <a target="_blank" rel="noopener noreferrer" 
                               href="https://www.bima-mo.com/">Bima-MO</a>
