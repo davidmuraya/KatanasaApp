@@ -11,7 +11,7 @@ router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
 
 
-@router.get("/sign-in", response_class=HTMLResponse)
+@router.get("/sign-in", response_class=HTMLResponse, include_in_schema=False)
 async def sign_in_page_resource(request: Request):
     data = [{"name": "Blade"},
             {"name": "Pulp"}]
