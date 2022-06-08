@@ -37,7 +37,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="yoo-form-field">
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="email" placeholder="Email" name="email">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -63,14 +63,18 @@
                   <button type="submit" class="yoo-form-btn yoo-style1 yoo-color1">Sign In</button>
                   <br />
                   {% if success%}
-                  <div class="yoo-alert yoo-success">
-                    {{message}}
-                  </div>
+                    <div class="yoo-alert yoo-success">
+                      {{message}}
+                    </div>
+                  {% else %}
+                    <div class="yoo-alert yoo-danger">
+                      {{message}}
+                    </div>
                   {%endif%}
                   <div>
                     &copy; <a target="_blank" rel="noopener noreferrer" 
                               href="https://www.bima-mo.com/">Bima-MO</a>
-                    - coded by <a target="_blank" rel="noopener noreferrer" href="https://www.salmonbusinesssolutions.com">Salmon Business Solutions</a>.
+                    - by <a target="_blank" rel="noopener noreferrer" href="https://www.salmonbusinesssolutions.com">Salmon Business Solutions</a>.
                   </div>
                 </div>
               </div>
