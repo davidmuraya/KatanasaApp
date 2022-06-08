@@ -18,10 +18,10 @@ apidescription = "This API displays Hello World."
 
 @router.get("/status", response_model=StatusModel, tags=["Status"], summary=apisummary, description=apidescription)
 async def status_resource(response: Response):
-    _statusModel = StatusModel()
+    status_model = StatusModel()
 
     response.status_code = status.HTTP_200_OK
-    _statusModel.detail = "Hello World"
-    _statusModel.success = True
+    status_model.detail = "Hello World"
+    status_model.success = True
 
     return _statusModel
