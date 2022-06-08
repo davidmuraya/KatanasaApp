@@ -22,7 +22,7 @@
       <div class="col-lg-4">
         <div class="yoo-vertical-middle">
           <div class="yoo-vertical-middle-in">
-            <form action="#" class="yoo-form yoo-style1">
+            <form action="/sign-in" class="yoo-form yoo-style1" method="POST">
               <h2 class="yoo-form-title">
                 <a target="_blank" rel="noopener noreferrer" 
                    href="https://www.salmonbusinesssolutions.com">SBS Bima-MO</a> - Sign IN
@@ -37,12 +37,12 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="yoo-form-field">
-                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Email" name="email">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="yoo-form-field">
-                    <input type="text" placeholder="Password">
+                    <input type="password" placeholder="Password" name="password">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -60,9 +60,13 @@
                     </div>
                   </div>
                   <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-                  <a href="#" class="yoo-form-btn yoo-style1 yoo-color1"><span>Sign In</span></a>
-
+                  <button type="submit" class="yoo-form-btn yoo-style1 yoo-color1">Sign In</button>
                   <br />
+                  {% if success%}
+                  <div class="yoo-alert yoo-success">
+                    {{message}}
+                  </div>
+                  {%endif%}
                   <div>
                     &copy; <a target="_blank" rel="noopener noreferrer" 
                               href="https://www.bima-mo.com/">Bima-MO</a>

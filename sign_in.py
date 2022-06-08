@@ -13,7 +13,23 @@ templates = Jinja2Templates(directory="app/templates")
 
 @router.get("/sign-in", response_class=HTMLResponse, include_in_schema=False)
 async def sign_in_page_resource(request: Request):
-    data = [{"name": "Blade"},
-            {"name": "Pulp"}]
+
     context = {"request": request}
-    return templates.TemplateResponse("sign-in.html", context=context, status_code=status.HTTP_200_OK)
+    return templates.TemplateResponse("sign-in.html", context=context)
+
+
+@router.post("/sign-in", response_class=HTMLResponse, include_in_schema=False)
+async def sign_in(request: Request):
+    form_data = await request.form()
+    email = form_data["email"]
+    password = form_data["password"]
+    message = "Login unsuccessful"
+    success = False
+
+    if email == "dm@salmonbusinesssolutions.com":
+        message = "Login successful"
+        success = True
+
+    print("email:{}, password:{}, success:{}".format(email, password, success))
+    context = {"request": request, "message": message, "success": success}
+    return templates.TemplateResponse("sign-in.html", context=context)
