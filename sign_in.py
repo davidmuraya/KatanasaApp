@@ -23,11 +23,14 @@ async def sign_in(request: Request, response: Response, email: str = Form(...), 
     message = "Login unsuccessful"
     success = False
 
+    # login logic
     if email == "correct@email.com":
         message = "Login successful"
         success = True
-        response.set_cookie(key="email", value=email)
-        # return RedirectResponse("/profile", status_code=status.HTTP_302_FOUND)
+
+        response.set_cookie(key="email", value=email, httponly=True)
+
+        return RedirectResponse("/profile", status_code=status.HTTP_302_FOUND)
 
     print("email:{}, password:{}, success:{}".format(email, password, success))
     context = {"request": request, "message": message, "success": success}
