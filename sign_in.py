@@ -3,9 +3,12 @@ from fastapi import status
 
 from fastapi import FastAPI, Request, Form, Header, Response
 from fastapi.responses import HTMLResponse, RedirectResponse
-from typing import Optional
+
+from datetime import timedelta
 
 from fastapi.templating import Jinja2Templates
+
+import authentication
 
 router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
@@ -24,13 +27,18 @@ async def sign_in(request: Request, response: Response, email: str = Form(...), 
     success = False
 
     # login logic
-    if email == "correct@email.com":
+    if email == "dm@salmonbusinesssolutions.com":
         message = "Login successful"
         success = True
 
-        response.set_cookie(key="email", value=email, httponly=True)
+        access_token_expires = timedelta(minutes=authentication.ACCESS_TOKEN_EXPIRE_MINUTES)
 
-        return RedirectResponse("/profile", status_code=status.HTTP_302_FOUND)
+        access_token = authentication.create_access_token(data={"sub": "dm@salmonbusinesssolutions.com"}, expires_delta=access_token_expires)
+
+        response = RedirectResponse("/profile", status_code=status.HTTP_302_FOUND)
+        response.set_cookie(key="access_token", value=f"Bearer {access_token}", httponly=True)
+
+        return response
 
     print("email:{}, password:{}, success:{}".format(email, password, success))
     context = {"request": request, "message": message, "success": success}
