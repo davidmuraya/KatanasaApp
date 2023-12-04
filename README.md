@@ -14,24 +14,24 @@ MPESA Daraja API documentation can be found at https://developer.safaricom.co.ke
 
 The technology stack used to create the backend of this application is as follows:
 
-- Framework
+- **Framework**
     - FastAPI and Starlette
-- ASGI Server
+- **ASGI Server**
     - Uvicorn and Gunicorn
-- Containerization
+- **Containerization**
     - Docker
-- Database
+- **Database**
     - Firestore
-- Authentication
+- **Authentication**
     - Bcrypt
     - Passlib
     - JWT Tokens with Pyjwt
-- Testing
+- **Testing**
     - Pytest
-- Development
+- **Development**
     - PyCharm
 
-# The Katanasa Application
+# The Web Application
 
 ## M-pesa Transactions:
 To view incoming payments, click on Transactions > M-pesa transactions:
@@ -52,7 +52,7 @@ LIPA_NA_MPESA_CALLBACK_URL="xxxx"
 LIPA_NA_MPESA_BUSINESS_SHORT_CODE="xxx"
 ```
 
-### Katanasa App
+### Katanasa Project
 Project structure:
 ```
 
