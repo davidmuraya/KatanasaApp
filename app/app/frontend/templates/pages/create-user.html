@@ -1,0 +1,61 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block content %}
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+  </div>
+  <div class="row">
+    <div class="col-12 col-xl-12">
+      <div class="card card-body border-0 shadow mb-4">
+        <h2 class="h5 mb-4">Create a User</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="username">First Name</label>
+                <input class="form-control" id="username" type="text" placeholder="Enter Username" required title="User Name is required" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="password">Password</label>
+                <input class="form-control" id="password" type="text" placeholder="Enter Password" required title="User Password is required" />
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" checked id="read-only">
+                  <label class="form-check-label" for="read-only">
+                    Read-Only? This user will not be able to create sales or attendance records.
+                  </label>
+              </div>
+            </div>
+           <div class="col-md-6 mb-3">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="are-you-sure">
+                  <label class="form-check-label" for="are-you-sure">
+                    Are you sure?
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button id="btn-submit" class="btn btn-gray-800 mt-2 animate-up-2" type="submit">Save</button>
+          </div>
+          <div id="error-message" class="text-danger mb-3" style="display: none;"></div>
+          <div id="success-message" class="text-success mb-3" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+{% block extra_js %}
+
+<script src="/static/assets/js/create-user.js"></script>
+
+
+{% endblock extra_js %}

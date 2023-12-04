@@ -31,6 +31,11 @@ The technology stack used to create the backend of this application is as follow
 - Development
     - PyCharm
 
+# The Katanasa Application
+
+## M-pesa Transactions:
+To view incoming payments, click on Transactions > M-pesa transactions:
+![img.png](img/img.png)
 
 ## Configuration
 Please create a .env file in the app folder with your configuration:
@@ -108,7 +113,7 @@ CMD exec gunicorn --bind :$PORT --workers 1 --worker-class uvicorn.workers.Uvico
 # CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
 ```
 
-## Deploying on Google Cloud Run
+## Continuous Build Google Cloud Run
 
 #### To manually build an image container:
 1. Install Google Cloud SDK.
@@ -142,8 +147,14 @@ Build the container with the following command:
 ```
 docker build -t katanasa-app:latest .
 ```
-# The Katanasa Application
 
-## M-pesa Transactions:
-To view incoming payments, click on Transactions > M-pesa transactions:
-![img.png](img/img.png)
+## Continuous Deployment on Cloud Run
+
+Use the [cloudbuild.yaml](cloudbuild.yaml) file to create your deployment pipeline on GCP.
+
+In the gclould build trigger configuration page, set the build trigger as follows:
+
+![img.png](img/gcloud-build-trigger-config.png)
+
+Successful build and deployment:
+![img.png](img/gcloud-build-details.png)
