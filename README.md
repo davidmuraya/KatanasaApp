@@ -142,5 +142,8 @@ Build the container with the following command:
 ```
 docker build -t katanasa-app:latest .
 ```
+# The Katanasa Application
 
-
+## M-pesa Transactions:
+To view incoming payments, click on Transactions > M-pesa transactions:
+![img.png](img/img.png)
