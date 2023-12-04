@@ -1,18 +1,26 @@
-fastapi==0.63.0
-uvicorn==0.13.4
-asyncio==3.4.3
+fastapi==0.98.0
+uvicorn
+asyncio
+aiohttp==3.8.5
 
-gunicorn==20.0.4
-uvloop==0.15.2
-httptools==0.1.1
+pandas==2.0.3
 
-jinja2==2.11.2
-aiofiles==0.6.0
+gunicorn
+uvloop
+httptools
 
-gunicorn==20.0.4
-uvloop~=0.15.2
-httptools==0.1.1
-python-jose==3.2.0
-passlib==1.7.4
-python-multipart==0.0.5
-bcrypt==3.1.7
+python-jose
+passlib
+python-multipart
+bcrypt
+
+jinja2
+aiofiles
+
+pydantic==1.10.4
+python-dotenv
+google
+google-cloud-firestore
+python-dotenv==1.0.0
+google-cloud-logging==3.4.0
+

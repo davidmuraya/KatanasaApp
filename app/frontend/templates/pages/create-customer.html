@@ -1,0 +1,125 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block content %}
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+  </div>
+<form action="">
+  <div class="row">
+    <div class="col-12 col-xl-12">
+      <div class="card card-body border-0 shadow mb-4">
+        <h2 class="h5 mb-4">Customer information</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="first_name">First Name</label>
+                <input class="form-control" id="first_name" type="text" placeholder="Enter first name" required title="First Name is required" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="last_name">Last Name</label>
+                <input class="form-control" id="last_name" type="text" placeholder="last name" required />
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3">
+              <label for="business-source">Business Source</label>
+              <select class="form-select mb-0" id="business-source" aria-label="Business Source select" required>
+                <option selected>Walk-ins</option>
+                <option value="Online">Online</option>
+                <option value="Walk-ins">Walk-ins</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="gender">Gender</label>
+              <select class="form-select mb-0" id="gender" aria-label="Gender select">
+                <option selected>Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" type="email" placeholder="name@company.com" required />
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input class="form-control" id="phone" type="number" placeholder="+254 345 678 910" required />
+              </div>
+            </div>
+          </div>
+          <h2 class="h5 my-4">Location</h2>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <div class="form-group">
+                <label for="city">City/Town</label>
+                <input class="form-control" id="city" name="city" type="text" placeholder="Enter city/town">
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button id="btn-submit" class="btn btn-gray-800 mt-2 animate-up-2" type="submit">Save</button>
+          </div>
+          <div id="error-message" class="text-danger mb-3" style="display: none;"></div>
+          <div id="success-message" class="text-success mb-3" style="display: none;"></div>
+      </div>
+      <div class="card card-body border-0 shadow mb-4 mb-xl-0">
+        <h2 class="h5 mb-4">Alerts & Notifications</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-bottom">
+            <div>
+              <h3 class="h6 mb-1">Company News</h3>
+              <p class="small pe-4">Get Katanasa news, announcements, and product updates</p>
+            </div>
+            <div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="user-notification-1">
+                <label class="form-check-label" for="user-notification-1"></label>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-bottom">
+            <div>
+              <h3 class="h6 mb-1">Account Activity</h3>
+              <p class="small pe-4">Get important notifications about you or activity you have missed</p>
+            </div>
+            <div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="user-notification-2" checked>
+                <label class="form-check-label" for="user-notification-2"></label>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex align-items-center justify-content-between px-0">
+            <div>
+              <h3 class="h6 mb-1">Meetups Near You</h3>
+              <p class="small pe-4">Get an email when a Katanasa Meetup is posted close to my location</p>
+            </div>
+            <div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="user-notification-3" checked>
+                <label class="form-check-label" for="user-notification-3"></label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</form>
+
+{% endblock content %}
+
+{% block extra_js %}
+
+<script src="/static/assets/js/create-customer.js"></script>
+
+{% endblock extra_js %}
